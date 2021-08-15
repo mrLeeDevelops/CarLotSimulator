@@ -20,6 +20,7 @@ namespace CarLotSimulator
             //DONE--Call each of the methods for each car
             var myCarLot = new List<Car>();
             var myCar1 = new Car();
+            Console.WriteLine($"The Number of Cars on this lot is {CarLot.numberOfCars}."); 
             myCarLot.Add(myCar1);
             myCar1.Year = 2019;
             myCar1.Make = "Ford";
@@ -39,10 +40,13 @@ namespace CarLotSimulator
                 HonkNoise = "HONK",
                 IsDriveable = true
             };
+            Console.WriteLine($"The Number of Cars on this lot is {CarLot.numberOfCars}."); 
             myCarLot.Add(myCar2);
             myCar2.MakeEngineNoise(myCar2.EngineNoise);
             myCar2.MakeHonkNoise(myCar2.HonkNoise);
             var myCar3 = new Car(1978, "Chevy", "El Camino", "...", "BEEP", false);
+            //CarLot.numberOfCars++;
+            Console.WriteLine($"The Number of Cars on this lot is {CarLot.numberOfCars}."); 
             myCarLot.Add(myCar3);
             myCar3.MakeEngineNoise(myCar3.EngineNoise);
             myCar3.MakeHonkNoise(myCar3.HonkNoise);
